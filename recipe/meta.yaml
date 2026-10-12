@@ -1,4 +1,4 @@
-{% set version = "1.12.3" %}
+{% set version = "1-12-4" %}
 
 package:
   name: libvigra
@@ -6,13 +6,13 @@ package:
 
 source:
   url: https://github.com/ukoethe/vigra/archive/Version-{{ version.replace(".", "-") }}.tar.gz
-  sha256: 04bd9bcf3d5fd694c8fd25d651a56376f2b8bc2623d41b1805fc84ac5bad0512
+  sha256: fa516eeb19f72ae98a6d5a284c033bc0e0070cb73a8c72985696d2ad73a9292a
   patches:
     - 0001-Address-changes-in-reference-counting-for-python-3.14.patch
     - 0002-Only-require-the-Python-Development.Module-component.patch
 
 build:
-  number: 4
+  number: 0
   detect_binary_files_with_prefix: true
   # There is a vigra header ./include/vigra/promote_traits.hxx.py
   # That doesn't have a meaningful pyc compilation since this is supposed
