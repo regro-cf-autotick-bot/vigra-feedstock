@@ -1,4 +1,4 @@
-{% set version = "1-12-4" %}
+{% set version = "1.12.4" %}
 
 package:
   name: libvigra
@@ -8,7 +8,6 @@ source:
   url: https://github.com/ukoethe/vigra/archive/Version-{{ version.replace(".", "-") }}.tar.gz
   sha256: fa516eeb19f72ae98a6d5a284c033bc0e0070cb73a8c72985696d2ad73a9292a
   patches:
-    - 0001-Address-changes-in-reference-counting-for-python-3.14.patch
     - 0002-Only-require-the-Python-Development.Module-component.patch
 
 build:
